@@ -1,0 +1,17 @@
+<div class="filtration">
+  <input #maxTrainingPriceInput class="price-input" type="number" placeholder="Max price" [value]="service.getMaxPrice()">
+  <button class="filter" (click)="service.applyFilter(maxTrainingPriceInput.value)">Filter</button>
+</div>
+<div class="object-container">
+  <div class="object" *ngFor="let item of items" [appPriceFilter]="{maxPrice : service.getMaxPrice()}">
+    <div class="trainer">
+      <img class="top-photo" [src]="item.imageUrl" alt="{{ item.name }}">
+      <div class="object-text">
+        <h3>{{ item.name }}</h3>
+        <p>Age: {{ item.age }}</p>
+        <p>Specialty: {{ item.specialty }}</p>
+        <p class="price">Training Price: {{ item.trainingPrice }} UAH</p>
+      </div>
+    </div>
+  </div>
+</div>

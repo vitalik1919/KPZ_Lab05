@@ -1,0 +1,16 @@
+<div class="workout-container">
+  <h1>Beginner's Workout</h1>
+  <div class="exercises-container">
+    <div class="exercise" *ngFor="let item of service.workoutPlan">
+      <div class="modal-left">
+        <h3>{{item.name}}</h3>
+        <p>Equipment: {{item.equipment}} </p>
+        <p>Muscle: {{item.muscle}}</p>
+        <button class="mark-finish" (click)="service.deleteExercise(item.id)">✓</button>
+      </div>
+      <div class="instructions-container">
+        <div id="{{item.name}}-i" class="instr-text">{{item.instructions}}</div>
+      </div>
+    </div>
+  </div>
+</div>

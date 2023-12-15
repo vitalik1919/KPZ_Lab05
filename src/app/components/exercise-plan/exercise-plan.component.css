@@ -1,0 +1,67 @@
+.workout-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-top: 1%;
+}
+.exercises-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.exercise {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.modal-left {
+  background-color: #d7d7d7;
+  border: none;
+  border-radius: 15px;
+  color: black;
+  min-width: 15vw;
+  width: 30vw;
+  height: 30vh;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-left: 10px;
+  font-family: Consolas, serif;
+}
+.modal-left h3 {
+  font-size: 20px;
+}
+.mark-finish {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  color: #399331;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.mark-finish:hover {
+  color: white;
+  background-color: #399331;
+}
+.mark-finish:active {
+  color: white;
+  background-color: #c01717;
+}
+.instructions-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+.instr-text {
+  font-family: Consolas, serif;
+}
+

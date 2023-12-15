@@ -1,1 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background: linear-gradient(to bottom right, #1f1f1f, #0a0a0a);
+  min-height: 100vmin;
+  height: max-content;
+  color: white;
+  font-family: Arial, serif;
+  margin: 0;
+}
+.object {
+  display: flex;
+  flex-basis: calc(20%);
+  border-radius: 15px;
+  border: none;
+  color: black;
+  font-family: Consolas, serif;
+  font-size: 15px;
+  background-color: #d7d7d7;
+  width: 180px;
+  margin: 10px;
+  height: 55vh;
+  overflow: hidden;
+}
+.object-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.filtration {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 85%;
+  margin-top: 5%;
+  margin-left: 1.8%;
+}
+.price-input {
+  margin-right: 10px;
+  width: 90px;
+  font-family: Consolas, serif;
+  font-size: 13px;
+}
+.filter {
+  width: 70px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #51c545;
+  color: white;
+  font-family: Consolas, serif;
+  font-weight: bold;
+}
+.filter:hover {
+  background-color: #46ab3c;
+  cursor: pointer;
+}
+.filter:active {
+  background-color: #399331;
+}
+.object-text {
+  padding-left: 10px;
+}
+.top-photo {
+  width: 17.8vw;
+  height: 22.5vh;
+  filter: grayscale(70%);
+}

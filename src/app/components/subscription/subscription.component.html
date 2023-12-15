@@ -1,0 +1,17 @@
+<div class="filtration">
+  <input #maxPriceInput class="price-input" type="number" placeholder="Max price" [value]="service.getMaxPrice()">
+  <button class="filter" (click)="service.applyFilter(maxPriceInput.value)">Filter</button>
+</div>
+<div class="object-container">
+  <div class="object" *ngFor="let item of items" [appPriceFilter]="{maxPrice : service.getMaxPrice()}">
+    <div class="subscription">
+      <img class="top-photo" [src]="item.imageUrl" alt="{{ item.type }}">
+      <div class="object-text">
+        <h3>{{ item.type | subType}}</h3>
+        <p>Start Time: {{ item.startTime }}</p>
+        <p>End Time: {{ item.endTime }}</p>
+        <p class="price">Price: {{ item.price }} UAH</p>
+      </div>
+    </div>
+  </div>
+</div>
